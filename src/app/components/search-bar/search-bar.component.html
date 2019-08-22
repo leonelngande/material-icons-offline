@@ -13,7 +13,7 @@
            [(ngModel)]="searchValue"
            (ngModelChange)="updateSearchQueryParam(searchValue)">
 
-    <button mat-button *ngIf="searchValue" matSuffix mat-icon-button aria-label="Clear" (click)="clearSearch()">
+    <button mat-button class="action-clear-search" *ngIf="searchValue" matSuffix mat-icon-button aria-label="Clear" (click)="clearSearch()">
       <mat-icon>close</mat-icon>
     </button>
 
