@@ -1,0 +1,24 @@
+<ng-container *ngFor="let category of (iconsData$ | async)?.categories">
+
+  <mat-grid-list cols="1" rowHeight="15:1" [id]="category.name">
+    <mat-grid-tile>{{category.name | titlecase}}</mat-grid-tile>
+  </mat-grid-list>
+
+  <mat-grid-list appResponsiveColumns [responsiveColumns]="iconColumnsMap" cols="9" rowHeight="2:2">
+
+    <mat-grid-tile *ngFor="let icon of category.icons">
+
+      <button mat-button mat-icon-button class="icon-button">
+
+        <mat-icon>{{icon.id}}</mat-icon>
+
+      </button>
+
+      <mat-grid-tile-footer>{{icon.id}}</mat-grid-tile-footer>
+
+    </mat-grid-tile>
+
+  </mat-grid-list>
+
+</ng-container>
+

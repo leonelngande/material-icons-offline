@@ -1,0 +1,26 @@
+::ng-deep {
+  .mat-form-field-flex {
+    background: white;
+    margin-top: 0 !important;
+
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+  }
+  .mat-form-field-outline-end, .mat-form-field-outline-start {
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+    border-width: 0 !important;
+  }
+  .mat-form-field-wrapper {
+    margin: 0 !important;
+  }
+
+  .mat-form-field-flex:hover {
+    opacity: 1;
+  }
+}
+
+button.search-indicator {
+  font-size: 14px !important;
+  color: grey;
+}
